@@ -54,8 +54,13 @@
       },
       {
         "id": 9,
-        "name": "开源类库",
+        "name": "开源",
         "url": "/openSource"
+      },
+      {
+        "id": 10,
+        "name": "知识",
+        "url": "/knowledge"
       }
     ]
   },

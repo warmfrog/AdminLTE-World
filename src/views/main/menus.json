@@ -1,0 +1,63 @@
+{
+  "code": "000000",
+  "data": {
+    "menus": [
+      {
+        "id": -1,
+        "name": "主页",
+        "url": "/"
+      },
+      {
+        "id": 0,
+        "name": "博客",
+        "url": "/post"
+      },
+      {
+        "id": 1,
+        "name": "相册",
+        "url": "/photo"
+      },
+      {
+        "id": 2,
+        "name": "图书",
+        "url": "/book"
+      },
+      {
+        "id": 4,
+        "name": "音乐",
+        "url": "/music"
+      },
+      {
+        "id": 5,
+        "name": "电影",
+        "url": "/movie"
+      },
+      {
+        "id": 3,
+        "name": "软件",
+        "url": "/software"
+      },
+      {
+        "id": 6,
+        "name": "App",
+        "url": "/app"
+      },
+      {
+        "id": 7,
+        "name": "服务",
+        "url": "/service"
+      },
+      {
+        "id": 8,
+        "name": "网址",
+        "url": "/url"
+      },
+      {
+        "id": 9,
+        "name": "开源类库",
+        "url": "/openSource"
+      }
+    ]
+  },
+  "message": "success"
+}

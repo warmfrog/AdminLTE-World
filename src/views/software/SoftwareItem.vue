@@ -9,7 +9,7 @@
       <div class="card-body pt-0">
         <div class="row">
           <div class="col-3">
-            <img src="../../assets/img/user1-128x128.jpg" alt="" class=" img-fluid">
+            <img src="../../assets/myImg/softwareExample.jpeg" alt="" class=" img-fluid">
           </div>
           <div class="col-9">
             <div class="row">

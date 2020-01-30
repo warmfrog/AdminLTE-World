@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "ionicons": "^2.0.1",
     "jQuery": "^1.7.4",
     "jquery": "^3.4.1",
     "jsdom": "^16.0.1",

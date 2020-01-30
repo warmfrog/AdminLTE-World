@@ -1,0 +1,1079 @@
+{
+  "code": "00000",
+  "data": {
+    "books": [
+      {
+        "uuid": "23849324",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493241",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493242",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493243",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493244",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493245",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493246",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493247",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      },
+      {
+        "uuid": "238493248",
+        "title": "活着",
+        "subtitle": "怎样活着好",
+        "version": {
+          "serialNumber": 2,
+          "description": "第二版"
+        },
+        "isbn": "9787210118046",
+        "author": {
+          "name": "余华",
+          "country": "中国",
+          "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+        },
+        "translators": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "producer": "果壳文化",
+        "authors": [
+          {
+            "name": "余华",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          },
+          {
+            "name": "华子",
+            "country": "中国",
+            "introduction": "欧几里得 （Ευκλειδη）\n\n公元前330—公元前225\n\n古希腊人，数学家\n\n著作《几何原本》是欧洲数学的基础\n\n奠定了几何学、数学和科学的发展，对西方人的思维方法有深远的影响\n\n被称为“几何之父”\n\n译者：\n\n张卜天\n\n1979年出生\n\n北京大学哲学系博士\n\n现为清华大学人文学院科学史系长聘教授\n\n中国社会科学院自然科学史研究所研究员"
+          }
+        ],
+        "thumbnail": "https://www.bac.jpg",
+        "coverImages": [
+           "https://www.bac.jpg",  "https://www.bac.jpg"
+        ],
+        "hasPaper": true,
+        "hasEbook": false,
+        "bookDesign": "平装",
+        "publisher": "中国人民出版社",
+        "publishDate": 1580278084785,
+        "pages": 398,
+        "price": 89,
+        "language": "zh-cn",
+        "brief": "数千年来，只有《几何原本》写出了逻辑演绎的本质. 欧几里得以天才的构思，总结了古希腊人的思维框架，即合理的假设→缜密的演绎→结论，形成了一个严密的逻辑体系。这一方法后来成为建立任何知识体系的典范，被奉为必须遵守的严密思维的范例。",
+        "catalog": [
+          "第一卷",
+          "第二卷",
+          "第三卷"
+        ],
+        "score": 9.8,
+        "tags": [
+          "几何",
+          "逻辑"
+        ],
+        "classifications": [
+          "逻辑"
+        ],
+        "downloadLinks": [
+          {
+            "downloadUrl": "http://www.baidu.com",
+            "password": "sdbc"
+          }
+        ],
+        "paperPurchaseLinks": [
+          {
+            "platform": "豆瓣",
+            "url": "http://www.douban.com",
+            "price": 99
+          },
+          {
+            "platform": "亚马逊",
+            "url": "http://www.amazon.com",
+            "price": 99
+          },
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "ebookPurchaseLinks": [
+          {
+            "platform": "京东",
+            "url": "http://www.jd.com",
+            "price": 99
+          },
+          {
+            "platform": "当当",
+            "url": "http://www.dangdang.com",
+            "price": 99
+          }
+        ],
+        "douban": {
+          "id": "2384892",
+          "url": "www.douban.com",
+          "ebookPurchaseLink": "www.douban.com",
+          "paperPurchaseLink": "www.douban.com",
+          "score": 9.8,
+          "stars": {
+            "oneStar": 5,
+            "twoStar": 29,
+            "threeStar": 99,
+            "fourStar": 1000,
+            "fiveStar": 9999
+          }
+        },
+        "readCount": 2048,
+        "readingCount": 203,
+        "wantReadCount": 988,
+        "size": 1024
+      }
+    ]
+  },
+  "message": "success"
+}

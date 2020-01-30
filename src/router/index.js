@@ -6,12 +6,16 @@ Vue.use(Router)
 const routes = [
   {
     path: '/',
-    redirect: '/home'
-  },
-  {
-    path: '/home',
-    component: resolve => require(['@/views/main/Home.vue'], resolve),
+    component: resolve => require(['@/views/main/Main.vue'], resolve),
     children: [
+      {
+        path: '/',
+        redirect: '/home'
+      },
+      {
+        path: '/home',
+    component: resolve => require(['@/views/main/Home.vue'], resolve)
+      },
       {
         path: '/post',
         component: resolve => require(['@/views/post/List.vue'], resolve)
@@ -52,9 +56,29 @@ const routes = [
       {
         path: '/openSource',
         component: resolve => require(['@/views/openSource/List.vue'], resolve)
+      },
+      {
+        path: '/knowledge',
+        component: resolve => require(['@/views/knowledge/List.vue'], resolve)
+      },
+      {
+        path: '/404',
+        component: resolve => require(['@/views/main/404.vue'], resolve)
+      },
+      {
+        path: '/500',
+        component: resolve => require(['@/views/main/500.vue'], resolve)
       }
     ]
   },
+  {
+    path: "/login",
+    component: resolve => require(['@/views/main/Login.vue'], resolve)
+  },
+   {
+    path: "/register",
+    component: resolve => require(['@/views/main/Register.vue'], resolve)
+  }
 ]
 export default new Router({
   routes

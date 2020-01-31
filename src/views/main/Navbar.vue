@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import menus from "./menus.json";
+import menus from "@/data/menus.json";
 export default {
   name: 'Navbar',
   data() {

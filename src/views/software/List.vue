@@ -74,9 +74,9 @@
 <script>
 import NavClazzItem from '@/components/NavClazzItem'
 // import SoftwareList from './SoftwareList'
-import softClazzData from './SoftwareClazz.json'
+import softClazzData from '@/data/clazz/softwareClazz.json'
 import SoftwareItem from './SoftwareItem'
-import SoftwareData from './Softwares.json'
+import SoftwareData from '@/data/softwares.json'
 export default {
   name: 'List',
   components: {

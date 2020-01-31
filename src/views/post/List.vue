@@ -53,7 +53,7 @@
 
 <script>
 import PostItem from './PostItem'
-import postsData from './posts.json'
+import postsData from '@/data/posts.json'
   export default {
     name: 'PostList',
     components: {

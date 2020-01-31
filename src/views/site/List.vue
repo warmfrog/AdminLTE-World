@@ -36,7 +36,7 @@
 
 <script>
 import SiteItem from './SiteItem'
-import siteDatas from './sites.json'
+import siteDatas from '@/data/sites.json'
 export default {
   name: 'List',
   components: {

@@ -53,7 +53,7 @@
 
 <script>
 import PhotoItem from './PhotoItem'
-import photosData from './photos.json'
+import photosData from '@/data/photos.json'
   export default {
     name: "List",
     components: {

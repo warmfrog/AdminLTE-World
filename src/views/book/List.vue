@@ -53,7 +53,7 @@
 
 <script>
 import BookItem from './BookItem'
-import BooksData from './books.json'
+import BooksData from '@/data/books.json'
 export default {
   name: 'List',
   components: {

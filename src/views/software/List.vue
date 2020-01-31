@@ -29,15 +29,19 @@
               </ul>
             </div>
             <div class="card-body">
-              <div class="tab-content" >
+              <div class="tab-content">
                 <div class="tab-pane fade active show" role="tabpanel">
                   <!-- Default box -->
                   <div class="card card-solid">
-                    <router-view></router-view>
+                    <div class="card-body pb-0">
+                      <div class="row d-flex align-items-stretch">
+                        <SoftwareItem v-for="software in softwares" :key="software.uuid" :software="software"></SoftwareItem>
+                      </div>
+                    </div>
                     <!-- <SoftwareList></SoftwareList> -->
                     <!-- /.card-body -->
                     <div class="card-footer">
-                      <nav >
+                      <nav>
                         <ul class="pagination justify-content-center m-0">
                           <li class="page-item active"><a class="page-link" href="#">1</a></li>
                           <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -68,19 +72,21 @@
 </template>
 
 <script>
-
 import SoftwareClazzItem from './SoftwareClazzItem'
 // import SoftwareList from './SoftwareList'
 import softClazzData from './SoftwareClazz.json'
+import SoftwareItem from './SoftwareItem'
+import SoftwareData from './Softwares.json'
 export default {
   name: 'List',
   components: {
     SoftwareClazzItem,
-    // SoftwareList
+    SoftwareItem
   },
   data() {
     return {
-      softwareClazz: softClazzData
+      softwareClazz: softClazzData,
+      softwares: SoftwareData.data.softwares
     }
   }
 }

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "clazz": "人像",
+    "url": "/photo/people",
+    "subClazz": [
+    ]
+  },
+  {
+    "id": 1,
+    "clazz": "风光",
+    "url": "/photo/scene"
+  },
+  {
+    "id": 2,
+    "clazz": "纪实",
+    "url": "/photo/actual"
+  },
+  {
+    "id": 3,
+    "clazz": "新闻",
+    "url": "/photo/news"
+  },
+  {
+    "id": 3,
+    "clazz": "创意",
+    "url": "/photo/idea"
+  }
+]

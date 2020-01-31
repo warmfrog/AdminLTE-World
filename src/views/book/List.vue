@@ -1,27 +1,16 @@
 <template>
   <div class="content-wrapper" style="min-height: 1416.81px;">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Books</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Books</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
+    <ContentHeader></ContentHeader>
 
     <!-- Main content -->
     <section class="content">
 
       <!-- Default box -->
-      <div class="card card-solid">
+      <div class="card card-solid card-warning">
+        <div class="card-header p-0 pt-1">
+          <NavClazz :navClazz="bookClazz"></NavClazz>
+        </div>
         <div class="card-body pb-0">
           <div class="row d-flex align-items-stretch">
             <BookItem v-for="book in books" :key="book.uuid" :book="book"></BookItem>
@@ -43,6 +32,7 @@
 <script>
 import BookItem from './BookItem'
 import BooksData from '@/data/books.json'
+import bookClazz from '@/data/clazz/bookClazz.json'
 export default {
   name: 'List',
   components: {
@@ -50,7 +40,8 @@ export default {
   },
   data() {
     return {
-      books: BooksData.data.books
+      books: BooksData.data.books,
+      bookClazz: bookClazz
     }
   }
 }

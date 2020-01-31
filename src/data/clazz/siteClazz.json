@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "clazz": "搜索",
+    "url": "/site/novel",
+    "subClazz": [
+    ]
+  },
+  {
+    "id": 1,
+    "clazz": "视频",
+    "url": "/site/publish"
+  },
+  {
+    "id": 2,
+    "clazz": "音乐",
+    "url": "/site/remance"
+  },
+  {
+    "id": 3,
+    "clazz": "小说",
+    "url": "/site/wuxia"
+  },
+  {
+    "id": 3,
+    "clazz": "工具",
+    "url": "/site/fairy"
+  }
+]

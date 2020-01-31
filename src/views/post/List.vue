@@ -1,27 +1,16 @@
 <template>
-   <div class="content-wrapper" style="min-height: 1416.81px;">
+  <div class="content-wrapper" style="min-height: 1416.81px;">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Posts</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Post</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
+   <ContentHeader></ContentHeader>
 
     <!-- Main content -->
     <section class="content">
 
       <!-- Default box -->
-      <div class="card card-solid">
+      <div class="card card-solid card-tabs card-success">
+        <div class="card-header p-0 pt-1">
+          <NavClazz :navClazz="postClazz"></NavClazz>
+        </div>
         <div class="card-body pb-0">
           <div class="row d-flex align-items-stretch">
             <PostItem v-for="post in posts" :key="post.uuid" :post="post"></PostItem>
@@ -43,17 +32,19 @@
 <script>
 import PostItem from './PostItem'
 import postsData from '@/data/posts.json'
-  export default {
-    name: 'PostList',
-    components: {
-      PostItem
-    },
-    data(){
-      return {
-        posts: postsData.data
-      }
+import postClazz from '@/data/clazz/postClazz.json'
+export default {
+  name: 'PostList',
+  components: {
+    PostItem
+  },
+  data() {
+    return {
+      posts: postsData.data,
+      postClazz: postClazz
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

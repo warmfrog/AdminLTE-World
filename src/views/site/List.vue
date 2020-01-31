@@ -1,27 +1,23 @@
 <template>
   <div class="content-wrapper" style="min-height: 1071.31px;">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Sites</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Sites</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
+    <ContentHeader></ContentHeader>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content ">
       <div class="container-fluid">
-        <div class="row">
-          <SiteItem v-for="site in sites" :key="site.uuid" :site="site"></SiteItem>
+        <div class="card card-warning card-solid">
+          <div class="card-header p-0 pt-1 ">
+            <NavClazz :navClazz="siteClazz"></NavClazz>
+          </div>
+          <div class="card-body pb-0">
+            <div class="row">
+              <SiteItem v-for="site in sites" :key="site.uuid" :site="site"></SiteItem>
+            </div>
+          </div>
+          <div class="card-footer">
+            <Pagination></Pagination>
+          </div>
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -35,6 +31,7 @@
 </template>
 
 <script>
+import siteClazz from '@/data/clazz/siteClazz.json'
 import SiteItem from './SiteItem'
 import siteDatas from '@/data/sites.json'
 export default {
@@ -44,7 +41,8 @@ export default {
   },
   data() {
     return {
-      sites: siteDatas.data.sites
+      sites: siteDatas.data.sites,
+      siteClazz: siteClazz
     }
   }
 }

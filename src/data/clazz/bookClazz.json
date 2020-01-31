@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "clazz": "小说",
+    "url": "/book/novel",
+    "subClazz": [
+    ]
+  },
+  {
+    "id": 1,
+    "clazz": "出版",
+    "url": "/book/publish"
+  },
+  {
+    "id": 2,
+    "clazz": "言情",
+    "url": "/photo/remance"
+  },
+  {
+    "id": 3,
+    "clazz": "武侠",
+    "url": "/photo/wuxia"
+  },
+  {
+    "id": 3,
+    "clazz": "仙幻",
+    "url": "/photo/fairy"
+  }
+]

@@ -1,7 +1,5 @@
 <template>
     <div class="content-wrapper" style="min-height: 1416.81px;">
-    <!-- Content Header (Page header) -->
-    <ContentHeader></ContentHeader>
 
     <!-- Main content -->
     <section class="content">

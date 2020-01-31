@@ -7,11 +7,11 @@
   {
     "id": 1,
     "clazz": "开发",
-    "url": "development"
+    "url": "/software/development"
   },
   {
     "id": 2,
     "clazz": "聊天",
-    "url": "talk"
+    "url": "/software/talk"
   }
 ]

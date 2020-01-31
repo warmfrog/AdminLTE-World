@@ -30,10 +30,10 @@ const routes = [
       ...serviceRouter,
       ...siteRouter,
       ...softwareRouter,
-      {
-        path: '/',
-        redirect: 'home'
-      },
+      // {
+      //   path: '/',
+      //   redirect: 'home'
+      // },
       {
         path: 'home',
         component: resolve => require(['@/views/main/Home.vue'], resolve)
@@ -45,10 +45,6 @@ const routes = [
       {
         path: '500',
         component: resolve => require(['@/views/main/500.vue'], resolve)
-      },
-      {
-        path: '*',
-        redirect: '/404'
       }
     ]
   },

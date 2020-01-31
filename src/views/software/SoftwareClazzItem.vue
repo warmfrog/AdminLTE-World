@@ -1,6 +1,6 @@
 <template>
   <li class="nav-item">
-    <a class="nav-link" :href="softClazz.url" role="tab">{{ softClazz.clazz }}</a>
+    <router-link class="nav-link" :to="softClazz.url" role="tab">{{ softClazz.clazz }}</router-link>
   </li>
 </template>
 

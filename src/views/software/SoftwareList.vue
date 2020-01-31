@@ -1,7 +1,10 @@
 <template>
   <div class="card-body pb-0">
     <div class="row d-flex align-items-stretch">
-      <SoftwareItem v-for="software in softwares" :key="software.uuid" :software="software"></SoftwareItem>
+      <!-- <template v-if="clazz==''"> -->
+        <SoftwareItem v-for="software in softwares" :key="software.uuid" :software="software"></SoftwareItem>
+      <!-- </template> -->
+
     </div>
   </div>
 </template>
@@ -14,8 +17,8 @@ export default {
   components: {
     SoftwareItem
   },
-  data(){
-    return{
+  data() {
+    return {
       softwares: SoftwareData.data.softwares
     }
   }

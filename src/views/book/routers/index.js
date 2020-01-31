@@ -1,4 +1,4 @@
 export default [{
-    path: 'book',
+    path: '/book',
     component: ()=> import('../List.vue')
 }]

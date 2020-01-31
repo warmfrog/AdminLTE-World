@@ -34,6 +34,7 @@
                   <!-- Default box -->
                   <div class="card card-solid">
                     <router-view></router-view>
+                    <!-- <SoftwareList></SoftwareList> -->
                     <!-- /.card-body -->
                     <div class="card-footer">
                       <nav >
@@ -69,11 +70,13 @@
 <script>
 
 import SoftwareClazzItem from './SoftwareClazzItem'
-import softClazzData from './SoftwareClass.json'
+// import SoftwareList from './SoftwareList'
+import softClazzData from './SoftwareClazz.json'
 export default {
   name: 'List',
   components: {
-    SoftwareClazzItem
+    SoftwareClazzItem,
+    // SoftwareList
   },
   data() {
     return {

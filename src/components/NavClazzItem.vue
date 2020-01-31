@@ -1,14 +1,14 @@
 <template>
   <li class="nav-item">
-    <router-link class="nav-link" :to="softClazz.url" role="tab">{{ softClazz.clazz }}</router-link>
+    <router-link class="nav-link" :to="clazz.url" role="tab">{{ clazz.clazz }}</router-link>
   </li>
 </template>
 
 <script>
 export default {
-  name: 'SoftwareClazzItem',
+  name: 'ClazzItem',
   props: {
-    'softClazz': {
+    'clazz': {
       'id': Number,
       'clazz': String,
       'url': String

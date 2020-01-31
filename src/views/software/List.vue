@@ -25,7 +25,7 @@
           <div class="card card-primary card-tabs">
             <div class="card-header p-0 pt-1">
               <ul class="nav nav-tabs" role="tablist">
-                <SoftwareClazzItem v-for="clazzItem in softwareClazz" :key="clazzItem.id" :softClazz="clazzItem"></SoftwareClazzItem>
+                <NavClazzItem v-for="clazzItem in softwareClazz" :key="clazzItem.id" :clazz="clazzItem"></NavClazzItem>
               </ul>
             </div>
             <div class="card-body">
@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import SoftwareClazzItem from './SoftwareClazzItem'
+import NavClazzItem from '@/components/NavClazzItem'
 // import SoftwareList from './SoftwareList'
 import softClazzData from './SoftwareClazz.json'
 import SoftwareItem from './SoftwareItem'
@@ -80,7 +80,7 @@ import SoftwareData from './Softwares.json'
 export default {
   name: 'List',
   components: {
-    SoftwareClazzItem,
+    NavClazzItem,
     SoftwareItem
   },
   data() {

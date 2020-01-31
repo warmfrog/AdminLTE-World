@@ -20,30 +20,45 @@
     <!-- Main content -->
     <section class="content">
 
-      <!-- Default box -->
-      <div class="card card-solid">
-        <div class="card-body pb-0">
-          <div class="row d-flex align-items-stretch">
-            <SoftwareItem v-for="software in softwares" :key="software.uuid" :software="software"></SoftwareItem>
+      <div class="row">
+        <div class="col-12">
+          <div class="card card-primary card-tabs">
+            <div class="card-header p-0 pt-1">
+              <ul class="nav nav-tabs" role="tablist">
+                <SoftwareClazzItem v-for="clazzItem in softwareClazz" :key="clazzItem.id" :softClazz="clazzItem"></SoftwareClazzItem>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" >
+                <div class="tab-pane fade active show" role="tabpanel">
+                  <!-- Default box -->
+                  <div class="card card-solid">
+                    <router-view></router-view>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                      <nav >
+                        <ul class="pagination justify-content-center m-0">
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item"><a class="page-link" href="#">6</a></li>
+                          <li class="page-item"><a class="page-link" href="#">7</a></li>
+                          <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <!-- /.card-footer -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
           </div>
         </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-          <nav aria-label="Contacts Page Navigation">
-            <ul class="pagination justify-content-center m-0">
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item"><a class="page-link" href="#">7</a></li>
-              <li class="page-item"><a class="page-link" href="#">8</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- /.card-footer -->
       </div>
+
       <!-- /.card -->
 
     </section>
@@ -52,19 +67,20 @@
 </template>
 
 <script>
-  import SoftwareItem from './SoftwareItem'
-  import SoftwareData from './Softwares.json'
-  export default {
-    name: 'List',
-    components: {
-      SoftwareItem
-    },
-    data() {
-      return {
-        softwares: SoftwareData.data.softwares
-      }
+
+import SoftwareClazzItem from './SoftwareClazzItem'
+import softClazzData from './SoftwareClass.json'
+export default {
+  name: 'List',
+  components: {
+    SoftwareClazzItem
+  },
+  data() {
+    return {
+      softwareClazz: softClazzData
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

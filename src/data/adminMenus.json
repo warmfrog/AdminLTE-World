@@ -3,6 +3,11 @@
   "data": {
     "menus": [
       {
+        "id": 0,
+        "name": "博客列表",
+        "url": "/post/list"
+      },
+      {
         "id": 1,
         "name": "图片列表",
         "url": "/photo/list"

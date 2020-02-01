@@ -1,7 +1,11 @@
 <template>
   <div class="wrapper">
     <!-- Navbar -->
-    <Navbar></Navbar>
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+      <div class="container">
+        <Menubar></Menubar>
+      </div>
+    </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
@@ -44,7 +48,7 @@
           <div class="row">
             <div class="col-12">
               <!-- Default box -->
-              <Table></Table>
+              <HomeTable></HomeTable>
               <!-- /.card -->
             </div>
           </div>
@@ -65,14 +69,14 @@
 
 <script>
 import Sidebar from "./Sidebar"
-import Table from "./Table"
-import Navbar from '@/views/main/Navbar/Navbar'
+import HomeTable from "./Tables/HomeTable"
+import Menubar from '@/views/main/Navbar/Menubar'
 export default {
   name: 'Base',
   components: {
     Sidebar,
-    Table,
-    Navbar
+    HomeTable,
+    Menubar
   }
 }
 </script>

@@ -1,0 +1,63 @@
+{
+  "code": "000000",
+  "data": {
+    "menus": [
+      {
+        "id": 0,
+        "name": "菜单列表",
+        "url": "/menu/list"
+      },
+      {
+        "id": 1,
+        "name": "相册列表",
+        "url": "/photo/list"
+      },
+      {
+        "id": 2,
+        "name": "图书列表",
+        "url": "/book/list"
+      },
+      {
+        "id": 4,
+        "name": "音乐列表",
+        "url": "/music/list"
+      },
+      {
+        "id": 5,
+        "name": "影片列表",
+        "url": "/movie/list"
+      },
+      {
+        "id": 3,
+        "name": "软件列表",
+        "url": "/software/list"
+      },
+      {
+        "id": 6,
+        "name": "App列表",
+        "url": "/app/list"
+      },
+      {
+        "id": 7,
+        "name": "服务列表",
+        "url": "/service/list"
+      },
+      {
+        "id": 8,
+        "name": "网址列表",
+        "url": "/site/list"
+      },
+      {
+        "id": 9,
+        "name": "开源列表",
+        "url": "/openSource/list"
+      },
+      {
+        "id": 10,
+        "name": "知识列表",
+        "url": "/knowledge/list"
+      }
+    ]
+  },
+  "message": "success"
+}

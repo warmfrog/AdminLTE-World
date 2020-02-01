@@ -1,0 +1,23 @@
+{
+  "code": "000000",
+  "data": {
+    "menus": [
+      {
+        "id": 0,
+        "name": "登录",
+        "url": "/login"
+      },
+      {
+        "id": 1,
+        "name": "注册",
+        "url": "/register"
+      },
+      {
+        "id": 2,
+        "name": "后台",
+        "url": "/admin"
+      }
+    ]
+  },
+  "message": "success"
+}

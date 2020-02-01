@@ -55,6 +55,10 @@ const routes = [
   {
     path: "/register",
     component: resolve => require(['@/views/main/Register.vue'], resolve)
+  },
+  {
+    path: "/admin",
+    component: resolve => require(['@/views/admin/Base.vue'], resolve)
   }
 ]
 export default new Router({

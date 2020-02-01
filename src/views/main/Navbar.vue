@@ -36,14 +36,9 @@
     </div>
 
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <router-link class="nav-link" :to="login.url">
-          {{ login.desc}}
-        </router-link>
-      </li>
-      <li class="nav-item">
-        <router-link class="nav-link" :to="register.url">
-          {{ register.desc }}
+      <li class="nav-item" v-for="menu in rightMenus" :key="menu.id">
+        <router-link class="nav-link" :to="menu.url">
+          {{ menu.name}}
         </router-link>
       </li>
     </ul>
@@ -52,21 +47,15 @@
 
 <script>
 import menus from "@/data/menus.json";
+import rightMenus from "@/data/rightMenus.json"
 export default {
   name: 'Navbar',
   data() {
     return {
       menus: menus.data.menus,
-      login: {
-        url: '/login',
-        desc: '登录'
-      },
-      register: {
-        url: '/register',
-        desc: '注册'
-      }
-    };
-  },
+      rightMenus: rightMenus.data.menus
+    }
+  }
 }
 </script>
 

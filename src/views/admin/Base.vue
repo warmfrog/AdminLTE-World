@@ -1,27 +1,7 @@
 <template>
   <div class="wrapper">
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: 250px">
-      <!-- Left navbar links -->
-      <ul class="navbar-nav">
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="/admin" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
-      </ul>
-
-      <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <!-- Messages Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#">
-            <i class="far fa-user"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <Navbar></Navbar>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
@@ -86,11 +66,13 @@
 <script>
 import Sidebar from "./Sidebar"
 import Table from "./Table"
+import Navbar from '@/views/main/Navbar/Navbar'
 export default {
   name: 'Base',
   components: {
     Sidebar,
-    Table
+    Table,
+    Navbar
   }
 }
 </script>

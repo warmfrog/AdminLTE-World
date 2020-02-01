@@ -3,13 +3,8 @@
   "data": {
     "menus": [
       {
-        "id": 0,
-        "name": "菜单列表",
-        "url": "/menu/list"
-      },
-      {
         "id": 1,
-        "name": "相册列表",
+        "name": "图片列表",
         "url": "/photo/list"
       },
       {

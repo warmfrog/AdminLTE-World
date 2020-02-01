@@ -1,0 +1,71 @@
+{
+  "code": "00000",
+  "data": [
+    {
+      "uuid": "23894",
+      "name": "我们终将逝去的青春",
+      "year": 2019,
+      "tags": [
+        "文艺",
+        "小清新",
+        "青春"
+      ],
+      "screenshots": [
+        "www.abc.jpg",
+        "www.ddd.jpg"
+      ],
+      "cover": "www.abc.jpg",
+      "classifications": [
+        "青春"
+      ],
+      "director": "郭敬明",
+      "leadingRoles": [
+        "aa",
+        "ee"
+      ],
+      "screenwriters": [
+        "dd",
+        "ee",
+        "ff"
+      ],
+      "madeIn": [
+        "中国香港"
+      ],
+      "showingDate": [
+        {
+          "country": "zh-cn",
+          "date": 2394204
+        }
+      ],
+      "languages": ["zh-cn", "en-us"],
+      "score": 4.8,
+      "length": 339482,
+      "size": 2394023943,
+      "downloadLinks": [
+        {
+          "url": "www.ac.com",
+          "password": "sdkf"
+        }
+      ],
+      "playLinks": [
+        {
+          "platformCode": "aqiyi",
+          "platform": "爱奇艺",
+          "url": "www.bac.com",
+          "freeCharge": false
+        }
+      ],
+      "alias": "yewen",
+      "brief": "sdkfsdf",
+      "douban": {
+        "id": "32424",
+        "url": "www.ac.com"
+      },
+      "imdb": {
+        "id": "2342",
+        "url": "www.ac.com"
+      }
+    }
+  ],
+  "message": "success"
+}

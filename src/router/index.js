@@ -31,6 +31,10 @@ const routes = [
       ...siteRouter,
       ...softwareRouter,
       {
+        path: '/',
+        redirect: '/home'
+      },
+      {
         path: 'home',
         component: resolve => require(['@/views/main/Home.vue'], resolve)
       },

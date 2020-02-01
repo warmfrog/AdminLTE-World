@@ -6,11 +6,11 @@
         <span class="brand-text font-weight-light">AdminLTE 3</span>
       </a>
 
-      <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler order-1" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+      <div class="collapse navbar-collapse order-3">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item" v-bind:key="menu.id" v-for="menu in menus">
@@ -33,8 +33,20 @@
           </div>
         </form>
       </div>
-
     </div>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <router-link class="nav-link" :to="login.url">
+          {{ login.desc}}
+        </router-link>
+      </li>
+      <li class="nav-item">
+        <router-link class="nav-link" :to="register.url">
+          {{ register.desc }}
+        </router-link>
+      </li>
+    </ul>
   </nav>
 </template>
 
@@ -44,7 +56,15 @@ export default {
   name: 'Navbar',
   data() {
     return {
-      menus: menus.data.menus
+      menus: menus.data.menus,
+      login: {
+        url: '/login',
+        desc: '登录'
+      },
+      register: {
+        url: '/register',
+        desc: '注册'
+      }
     };
   },
 }

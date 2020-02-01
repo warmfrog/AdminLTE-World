@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white" style="margin-left: 250px">
       <div class="container">
         <Menubar></Menubar>
       </div>
@@ -22,40 +22,8 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Fixed Layout</h1>
-            </div>
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                <li class="breadcrumb-item active">Fixed Layout</li>
-              </ol>
-            </div>
-          </div>
-        </div><!-- /.container-fluid -->
-      </section>
 
-      <!-- Main content -->
-      <section class="content">
-
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <!-- Default box -->
-              <HomeTable></HomeTable>
-              <!-- /.card -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.content -->
-    </div>
+    <router-view></router-view>
     <!-- /.content-wrapper -->
 
     <footer class="main-footer">
@@ -69,13 +37,11 @@
 
 <script>
 import Sidebar from "./Sidebar"
-import HomeTable from "./Tables/HomeTable"
 import Menubar from '@/views/main/Navbar/Menubar'
 export default {
   name: 'Base',
   components: {
     Sidebar,
-    HomeTable,
     Menubar
   }
 }

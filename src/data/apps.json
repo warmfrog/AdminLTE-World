@@ -31,6 +31,276 @@
             "password": "dark"
           }
         ]
+      },
+          {
+        "uuid": "2394821",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394822",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394823",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394824",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394825",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394826",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394827",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394828",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
+      },
+          {
+        "uuid": "2394829",
+        "name": "QQ",
+        "updateDate": 238498394839,
+        "version": "3.6.2",
+        "platform": "android",
+        "distPlatforms": ["android", "ios", "ipados"],
+        "size": 23894823,
+        "hasAd": true,
+        "brief": "QQ",
+        "score": 3,
+        "classifications": ["聊天"],
+        "tags": ["QQ", "talk", "tencent"],
+        "developer": "tencent",
+        "developers": ["tencent"],
+        "freeCharge": false,
+        "openSource": false,
+        "git": "http://github.com",
+        "icon": "http://www.baidu.com",
+        "screenshots": [
+          "http://a.com",
+          "http://b.com"
+        ],
+        "downloadLinks": [
+          {
+            "url": "http://a.com",
+            "password": "dark"
+          }
+        ]
       }
     ]
   },

@@ -11,11 +11,13 @@ import musicRouter from '@/views/music/routers/index.js'
 import serviceRouter from '@/views/service/routers/index.js'
 import siteRouter from '@/views/site/routers/index.js'
 import softwareRouter from '@/views/software/routers/index.js'
+import adminRouter from '@/views/admin/routers/index.js'
 
 Vue.use(Router)
 
 const routes = [
   {
+    
     path: '/',
     component: resolve => require(['@/views/main/Main.vue'], resolve),
     children: [
@@ -56,10 +58,7 @@ const routes = [
     path: "/register",
     component: resolve => require(['@/views/main/Register.vue'], resolve)
   },
-  {
-    path: "/admin",
-    component: resolve => require(['@/views/admin/Base.vue'], resolve)
-  }
+  ...adminRouter
 ]
 export default new Router({
   routes

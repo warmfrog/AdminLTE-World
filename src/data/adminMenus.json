@@ -5,57 +5,57 @@
       {
         "id": 0,
         "name": "博客列表",
-        "url": "/post/list"
+        "url": "/admin/post/list"
       },
       {
         "id": 1,
         "name": "图片列表",
-        "url": "/photo/list"
+        "url": "/admin/photo/list"
       },
       {
         "id": 2,
         "name": "图书列表",
-        "url": "/book/list"
+        "url": "/admin/book/list"
       },
       {
         "id": 4,
         "name": "音乐列表",
-        "url": "/music/list"
+        "url": "/admin/music/list"
       },
       {
         "id": 5,
         "name": "影片列表",
-        "url": "/movie/list"
+        "url": "/admin/movie/list"
       },
       {
         "id": 3,
         "name": "软件列表",
-        "url": "/software/list"
+        "url": "/admin/software/list"
       },
       {
         "id": 6,
         "name": "App列表",
-        "url": "/app/list"
+        "url": "/admin/app/list"
       },
       {
         "id": 7,
         "name": "服务列表",
-        "url": "/service/list"
+        "url": "/admin/service/list"
       },
       {
         "id": 8,
         "name": "网址列表",
-        "url": "/site/list"
+        "url": "/admin/site/list"
       },
       {
         "id": 9,
         "name": "开源列表",
-        "url": "/openSource/list"
+        "url": "/admin/openSource/list"
       },
       {
         "id": 10,
         "name": "知识列表",
-        "url": "/knowledge/list"
+        "url": "/admin/knowledge/list"
       }
     ]
   },

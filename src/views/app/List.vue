@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="card card-warning card-solid">
           <div class="card-header p-0 pt-1 ">
-            <NavClazz :navClazz="siteClazz"></NavClazz>
+            <NavClazz :navClazz="appClazz"></NavClazz>
           </div>
           <div class="card-body pb-0">
             <div class="row">
@@ -30,6 +30,7 @@
 
 <script>
 import appDatas from '@/data/apps.json'
+import appClazz from '@/data/clazz/appClazz.json'
 import AppItem from './AppItem'
 export default {
   name: 'List',
@@ -38,7 +39,8 @@ export default {
   },
   data() {
     return {
-      apps: appDatas.data.apps
+      apps: appDatas.data.apps,
+      appClazz: appClazz
     }
   }
 }

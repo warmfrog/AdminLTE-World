@@ -23,18 +23,19 @@
       <div class="container-fluid">
         <!-- Info boxes -->
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3" v-for="item in menus" :key="item.id" :item="item">
-            <div class="info-box">
-              <span class="info-box-icon elevation-1" :class="item.bgColor"><i :class="item.icon"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text"> {{ item.name }} </span>
-                <span class="info-box-number">
-                  {{ item.count }}
-                </span>
+          <div class="col-12 col-sm-6 col-md-2" v-for="menu in menus" :key="menu.id" :menu="menu">
+            <router-link class="bg-light" :to="menu.url">
+              <div class="info-box">
+                <span class="info-box-icon elevation-1" :class="menu.bgColor"><i :class="menu.icon"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text"> {{ menu.name }} </span>
+                  <span class="info-box-number">
+                    {{ menu.count }}
+                  </span>
+                </div>
+                <!-- /.info-box-content -->
               </div>
-              <!-- /.info-box-content -->
-            </div>
+            </router-link>
             <!-- /.info-box -->
           </div>
         </div>

@@ -1,68 +1,106 @@
-{
-  "code": "000000",
-  "data": {
-    "menus": [
-      {
-        "id": -1,
-        "name": "主页",
-        "url": "/home"
-      },
-      {
-        "id": 0,
-        "name": "博客",
-        "url": "/post"
-      },
-      {
-        "id": 1,
-        "name": "图片",
-        "url": "/photo"
-      },
-      {
-        "id": 2,
-        "name": "图书",
-        "url": "/book"
-      },
-      {
-        "id": 4,
-        "name": "音乐",
-        "url": "/music"
-      },
-      {
-        "id": 5,
-        "name": "电影",
-        "url": "/movie"
-      },
-      {
-        "id": 3,
-        "name": "软件",
-        "url": "/software"
-      },
-      {
-        "id": 6,
-        "name": "App",
-        "url": "/app"
-      },
-      {
-        "id": 7,
-        "name": "服务",
-        "url": "/service"
-      },
-      {
-        "id": 8,
-        "name": "网址",
-        "url": "/site"
-      },
-      {
-        "id": 9,
-        "name": "开源",
-        "url": "/openSource"
-      },
-      {
-        "id": 10,
-        "name": "知识",
-        "url": "/knowledge"
-      }
-    ]
+[
+  {
+    "id": 0,
+    "name": "博客",
+    "count": 25,
+    "icon": "fas fa-file-alt",
+    "bgColor": "bg-purple",
+    "url": "/post"
   },
-  "message": "success"
-}
+  {
+    "id": 2,
+    "name": "图书",
+    "count": 25,
+    "icon": "fas fa-book",
+    "bgColor": "bg-success",
+    "url": "/book"
+  },
+  {
+    "id": 12,
+    "name": "官方文档",
+    "count": 25,
+    "icon": "fas fa-book",
+    "bgColor": "bg-success",
+    "url": "/doc"
+  },
+  {
+    "id": 9,
+    "name": "知识储备",
+    "count": 25,
+    "icon": "fas fa-book-reader",
+    "bgColor": "bg-info",
+    "url": "/knowledge"
+  },
+  {
+    "id": 11,
+    "name": "教程",
+    "count": 25,
+    "icon": "fas fa-book",
+    "bgColor": "bg-success",
+    "url": "/tutorial"
+  },
+  {
+    "id": 5,
+    "name": "开源",
+    "count": 25,
+    "icon": "fab fa-github",
+    "bgColor": "bg-gray",
+    "url": "/openSource"
+  },
+  {
+    "id": 3,
+    "name": "软件",
+    "count": 25,
+    "icon": "fab fa-microsoft",
+    "bgColor": "bg-indigo",
+    "url": "/software"
+  },
+  {
+    "id": 4,
+    "name": "App ",
+    "count": 25,
+    "icon": "fab fa-app-store",
+    "bgColor": "bg-primary",
+    "url": "/app"
+  },
+  {
+    "id": 1,
+    "name": "相册",
+    "count": 25,
+    "icon": "fas fa-image",
+    "bgColor": "bg-danger",
+    "album": "/album"
+  },
+  {
+    "id": 8,
+    "name": "网址",
+    "count": 25,
+    "icon": "fab fa-chrome",
+    "bgColor": "bg-warning",
+    "url": "/site"
+  },
+  {
+    "id": 6,
+    "name": "乐曲",
+    "count": 25,
+    "icon": "fas fa-music",
+    "bgColor": "bg-pink",
+    "url": "/music"
+  },
+  {
+    "id": 7,
+    "name": "电影",
+    "count": 25,
+    "icon": "fas fa-play",
+    "bgColor": "bg-olive",
+    "url": "/movie"
+  },
+  {
+    "id": 10,
+    "name": "服务",
+    "count": 25,
+    "icon": "fas fa-cloud",
+    "bgColor": "bg-lightblue",
+    "url": "/service"
+  }
+]

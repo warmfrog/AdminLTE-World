@@ -15,7 +15,7 @@ import menus from "@/data/menus.json";
     name: 'Menubar',
     data(){
       return {
-         menus: menus.data.menus,
+         menus: menus,
       }
     }
   }

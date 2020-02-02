@@ -1,15 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 text-left">
-            <h6>图片列表</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    <TableHeader :clazz="appClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -50,7 +42,11 @@
                             <td> {{ book.pages }}</td>
                             <td>{{ book.score }}</td>
                             <td>{{ book.downloadLinks }} </td>
-                            <td>编辑</td>
+                            <td>
+                              <button type="button" class="btn btn-warning">编辑</button>
+                              <button type="button" class="btn btn-success">查看</button>
+                              <button type="button" class="btn btn-danger">删除</button>
+                            </td>
                           </tr>
                         </tbody>
                         <tfoot>
@@ -91,11 +87,15 @@
 <script>
 import bookClazz from '@/data/clazz/bookClazz.json'
 import bookData from '@/data/books.json'
-let bookTableHeaders = ['标题', '作者', '分类', '标签', '版本', 'ISBN', '出版社', '出版日期', '页数', '评分',  '下载链接', '操作']
+let bookTableHeaders = ['标题', '作者', '分类', '标签', '版本', 'ISBN', '出版社', '出版日期', '页数', '评分', '下载链接', '操作']
+let modalTitle = "图书分类列表"
+let listTitle = "图书列表"
 export default {
   name: 'bookTable',
   data() {
     return {
+      listTitle: listTitle,
+      modalTitle: modalTitle,
       books: bookData.data.books,
       bookClazz: bookClazz,
       headers: bookTableHeaders

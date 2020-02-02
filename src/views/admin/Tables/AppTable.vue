@@ -1,15 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 text-left">
-            <h6>App 列表</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    <TableHeader :clazz="appClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -18,7 +10,7 @@
         <div class="row">
           <div class="col-12">
             <!-- Default box -->
-            <div class="card card-primary">
+            <div class="card card-purple">
               <div class="card-header p-0 pt-1">
                 <NavClazz :navClazz="appClazz"></NavClazz>
               </div>
@@ -47,7 +39,11 @@
                             <td>{{ app.developer }}</td>
                             <td>{{ (app.size/1024/1024).toFixed(2) }} MB</td>
                             <td>{{ app.downloadLinks }} </td>
-                            <td>编辑</td>
+                            <td>
+                              <button type="button" class="btn btn-warning">编辑</button>
+                              <button type="button" class="btn btn-success">查看</button>
+                              <button type="button" class="btn btn-danger">删除</button>
+                            </td>
                           </tr>
                         </tbody>
                         <tfoot>
@@ -90,16 +86,20 @@
 import appClazz from '@/data/clazz/appClazz.json'
 import appData from '@/data/apps.json'
 let AppTableHeaders = ['名称', '版本', '更新时间', '平台', '标签', '开发者', '大小', '下载链接', '操作']
+let modalTitle = "App 分类列表"
+let listTitle = "App 列表"
 export default {
   name: 'AppTable',
   data() {
     return {
       apps: appData.data.apps,
       appClazz: appClazz,
-      headers: AppTableHeaders
+      headers: AppTableHeaders,
+      modalTitle: modalTitle,
+      listTitle: listTitle
     }
-
-  }
+  },
+  components: {}
 }
 </script>
 

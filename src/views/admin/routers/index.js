@@ -13,43 +13,47 @@ export default [
       },
       {
         path: 'book/list',
-        component: ()=> import('../Tables/BookTable.vue')
+        component: () => import('../Tables/BookTable.vue')
       },
       {
         path: 'home/list',
-        component: ()=> import('../Tables/HomeTable.vue')
+        component: () => import('../Tables/HomeTable.vue')
       },
       {
         path: 'knowledge/list',
-        component: ()=> import('../Tables/KnowledgeTable.vue')
+        component: () => import('../Tables/KnowledgeTable.vue')
       },
       {
         path: 'movie/list',
-        component: ()=> import('../Tables/MovieTable.vue')
+        component: () => import('../Tables/MovieTable.vue')
       },
       {
         path: 'music/list',
-        component: ()=> import('../Tables/MusicTable.vue')
+        component: () => import('../Tables/MusicTable.vue')
       },
       {
         path: 'openSource/list',
-        component: ()=> import('../Tables/OpenSourceTable.vue')
+        component: () => import('../Tables/OpenSourceTable.vue')
       },
       {
         path: 'photo/list',
-        component: ()=> import('../Tables/PhotoTable.vue')
+        component: () => import('../Tables/PhotoTable.vue')
       },
       {
         path: 'service/list',
-        component: ()=> import('../Tables/ServiceTable.vue')
+        component: () => import('../Tables/ServiceTable.vue')
       },
       {
         path: 'site/list',
-        component: ()=> import('../Tables/SiteTable.vue')
+        component: () => import('../Tables/SiteTable.vue')
       },
       {
         path: 'software/list',
-        component: ()=> import('../Tables/SoftwareTable.vue')
+        component: () => import('../Tables/SoftwareTable.vue')
+      },
+      {
+        path: '/admin',
+        component: () => import('../DashBoard.vue')
       }
     ]
   }]

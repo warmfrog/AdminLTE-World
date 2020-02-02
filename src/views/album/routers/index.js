@@ -1,6 +1,6 @@
 export default [
   {
-    path: 'photo',
+    path: 'album',
     component: () => import('../List')
   }
 

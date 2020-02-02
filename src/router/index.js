@@ -4,7 +4,7 @@ import bookRouter from '@/views/book/routers/index.js'
 import appRouter from '@/views/app/routers/index.js'
 import knowledgeRouter from '@/views/knowledge/routers/index.js'
 import postRouter from '@/views/post/routers/index.js'
-import photoRouter from '@/views/photo/routers/index.js'
+import albumRouter from '@/views/album/routers/index.js'
 import openSourceRouter from '@/views/openSource/routers/index.js'
 import movieRouter from '@/views/movie/routers/index.js'
 import musicRouter from '@/views/music/routers/index.js'
@@ -25,7 +25,7 @@ const routes = [
       ...appRouter,
       ...knowledgeRouter,
       ...postRouter,
-      ...photoRouter,
+      ...albumRouter,
       ...openSourceRouter,
       ...movieRouter,
       ...musicRouter,

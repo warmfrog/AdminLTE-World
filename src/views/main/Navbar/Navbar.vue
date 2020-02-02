@@ -1,6 +1,7 @@
 <template>
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
-    <div class="container">
+    <!-- <div class="container"> -->
+      <div class="row">
       <Logo></Logo>
 
       <!-- <div class="collapse navbar-collapse order-0"> -->
@@ -19,13 +20,11 @@
 <script>
 import Logo from './Logo'
 import Menubar from './Menubar'
-import SearchForm from './SearchForm'
 import RightMenu from './RightMenu'
 
 export default {
   name: 'Navbar',
   components: {
-    SearchForm,
     Logo,
     Menubar,
     RightMenu

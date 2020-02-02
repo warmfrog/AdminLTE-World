@@ -1,15 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 text-left">
-            <h6>博客列表</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    <TableHeader :clazz="appClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -18,7 +10,7 @@
         <div class="row">
           <div class="col-12">
             <!-- Default box -->
-            <div class="card card-primary">
+            <div class="card card-success">
               <div class="card-header p-0 pt-1">
                 <NavClazz :navClazz="postTypes"></NavClazz>
               </div>
@@ -47,7 +39,11 @@
                             <td> {{ post.wordCount }}</td>
                             <td>{{ post.readerCount }}</td>
                             <td>{{ post.referencedCount }} </td>
-                            <td>编辑</td>
+                            <td>
+                              <button type="button" class="btn btn-warning">编辑</button>
+                              <button type="button" class="btn btn-success">查看</button>
+                              <button type="button" class="btn btn-danger">删除</button>
+                            </td>
                           </tr>
                         </tbody>
                         <tfoot>
@@ -90,10 +86,14 @@
 import postTypes from '@/data/clazz/postClazz.json'
 import postData from '@/data/posts.json'
 let postColumns = ["标题", "作者", "分类", "标签", "发布时间", "字数", "阅读量", "被引用数", "操作"]
+let modalTitle = "博客分类列表"
+let listTitle = "博客列表"
 export default {
   name: 'PostTable',
   data() {
     return {
+      listTitle: listTitle,
+      modalTitle: modalTitle,
       headers: postColumns,
       postTypes: postTypes,
       posts: postData.data

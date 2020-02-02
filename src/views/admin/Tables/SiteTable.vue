@@ -1,15 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 text-left">
-            <h6>网址列表</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    <TableHeader :clazz="appClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -44,7 +36,11 @@
                             <td>{{ site.classifications.join() }}</td>
                             <td>{{ site.tags.join() }}</td>
                             <td>{{ site.needVpn ? "Yes" : "No" }}</td>
-                            <td>编辑</td>
+                            <td>
+                              <button type="button" class="btn btn-warning">编辑</button>
+                              <button type="button" class="btn btn-success">查看</button>
+                              <button type="button" class="btn btn-danger">删除</button>
+                            </td>
                           </tr>
                         </tbody>
                         <tfoot>
@@ -85,11 +81,15 @@
 <script>
 import siteClazz from '@/data/clazz/siteClazz.json'
 import siteData from '@/data/sites.json'
-let siteTableHeaders = ['名称', 'Url', '分类', '标签', 'needVpn','操作']
+let siteTableHeaders = ['名称', 'Url', '分类', '标签', 'needVpn', '操作']
+let modalTitle = "网址分类列表"
+let listTitle = "网址列表"
 export default {
   name: 'siteTable',
   data() {
     return {
+      listTitle: listTitle,
+      modalTitle: modalTitle,
       sites: siteData.data.sites,
       siteClazz: siteClazz,
       headers: siteTableHeaders

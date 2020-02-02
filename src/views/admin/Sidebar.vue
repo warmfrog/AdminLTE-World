@@ -22,12 +22,12 @@
 
           <!-- Sidebar Menu -->
           <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul class="nav nav-pills nav-sidebar flex-column"  role="menu">
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
               <li class="nav-item text-left" v-for="menu in menus" :key="menu.id" :menu="menu">
                 <router-link :to="menu.url" class="nav-link">
-                  <!-- <i class="nav-icon fas fa-copy"></i> -->
+                  <i class="nav-icon" :class="menu.icon"></i>
                   <p>
                     {{ menu.name }}
                   </p>
@@ -54,12 +54,12 @@
 </template>
 
 <script>
-import adminMunus from '@/data/adminMenus.json'
+import sidebarMenu from '@/data/admin/sidebar-menus.json'
 export default {
   name: 'Sidebar',
   data() {
     return {
-      menus: adminMunus.data.menus
+      menus: sidebarMenu.data.menus
     }
   }
 }

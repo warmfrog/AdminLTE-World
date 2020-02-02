@@ -1,0 +1,86 @@
+{
+  "code": "000000",
+  "data": {
+    "menus": [
+      {
+        "id": 0,
+        "name": "博客",
+        "url": "/admin/post/list",
+        "icon": "fas fa-file-alt"
+      },
+      {
+        "id": 2,
+        "name": "图书",
+        "url": "/admin/book/list",
+        "icon": "fas fa-book"
+      },
+      {
+        "id": 10,
+        "name": "知识储备",
+        "url": "/admin/knowledge/list",
+        "icon": "fas fa-book-reader"
+      },
+      {
+        "id": 9,
+        "name": "开源",
+        "url": "/admin/openSource/list",
+        "icon": "fab fa-github"
+      },
+      {
+        "id": 11,
+        "name": "教程",
+        "url": "/admin/tutorial/list",
+        "icon": "fas fa-book"
+      },
+      {
+        "id": 12,
+        "name": "文档",
+        "url": "/admin/doc/list",
+        "icon": "fas fa-book"
+      },
+      {
+        "id": 8,
+        "name": "网址",
+        "url": "/admin/site/list",
+        "icon": "fab fa-chrome"
+      },
+      {
+        "id": 3,
+        "name": "软件",
+        "url": "/admin/software/list",
+        "icon": "fab fa-microsoft"
+      },
+      {
+        "id": 6,
+        "name": "App",
+        "url": "/admin/app/list",
+        "icon": "fab fa-app-store"
+      },
+      {
+        "id": 1,
+        "name": "相册",
+        "url": "/admin/album/list",
+        "icon": "fas fa-image"
+      },
+      {
+        "id": 4,
+        "name": "音乐",
+        "url": "/admin/music/list",
+        "icon": "fas fa-music"
+      },
+      {
+        "id": 5,
+        "name": "影片",
+        "url": "/admin/movie/list",
+        "icon": "fas fa-play"
+      },
+      {
+        "id": 7,
+        "name": "服务",
+        "url": "/admin/service/list",
+        "icon": "fas fa-cloud"
+      }
+    ]
+  },
+  "message": "success"
+}

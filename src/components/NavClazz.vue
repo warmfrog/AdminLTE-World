@@ -1,5 +1,5 @@
 <template>
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav" role="tablist">
       <NavClazzItem v-for="clazzItem in navClazz" :key="clazzItem.id" :clazz="clazzItem"></NavClazzItem>
     </ul>
 </template>

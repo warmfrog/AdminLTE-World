@@ -1,15 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 text-left">
-            <h6>软件列表</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    <TableHeader :clazz="appClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -51,7 +43,11 @@
                             <td>{{ software.openSource ? "Yes" : "No" }}</td>
                             <td>{{ (software.size/1024/1024).toFixed(0) }} MB</td>
                             <td>{{ software.downloadLinks }} </td>
-                            <td>编辑</td>
+                            <td>
+                              <button type="button" class="btn btn-warning">编辑</button>
+                              <button type="button" class="btn btn-success">查看</button>
+                              <button type="button" class="btn btn-danger">删除</button>
+                            </td>
                           </tr>
                         </tbody>
                         <tfoot>
@@ -94,10 +90,14 @@
 import softwareClazz from '@/data/clazz/softwareClazz.json'
 import softwareData from '@/data/softwares.json'
 let softwareTableHeaders = ['软件名', '版本', '更新时间', '平台', '官网', '分类', '标签', '开发者', '免费', '开源', '大小', '下载链接', '操作']
+let modalTitle = "软件分类列表"
+let listTitle = "软件列表"
 export default {
   name: 'softwareTable',
   data() {
     return {
+      listTitle: listTitle,
+      modalTitle: modalTitle,
       softwares: softwareData.data.softwares,
       softwareClazz: softwareClazz,
       headers: softwareTableHeaders

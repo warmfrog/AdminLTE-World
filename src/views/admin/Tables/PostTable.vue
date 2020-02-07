@@ -83,6 +83,7 @@
 </template>
 
 <script>
+import { listPost, addPost } from '@/views/post/apis/index'
 import postTypes from '@/data/clazz/postClazz.json'
 import postData from '@/data/posts.json'
 let postColumns = ["标题", "作者", "分类", "标签", "发布时间", "字数", "阅读量", "被引用数", "操作"]
@@ -97,6 +98,28 @@ export default {
       headers: postColumns,
       postTypes: postTypes,
       posts: postData.data
+    }
+  },
+  created(){
+    this.listPost()
+  },
+  methods: {
+    listPost(){
+      listPost({
+      }).then(res => {
+        if(res.code === '00000'){
+          this.posts = res.data.list
+        }
+      })
+    }
+    ,
+    addPost(){
+      addPost({}).then(res => {
+        if(res.code === '00000'){
+          /* 弹框，添加成功 */
+          alert('添加成功')
+        }
+      })
     }
   }
 }

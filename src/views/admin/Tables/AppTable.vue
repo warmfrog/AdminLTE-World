@@ -83,6 +83,7 @@
 </template>
 
 <script>
+import { appList }from '@/views/app/apis/index'
 import appClazz from '@/data/clazz/appClazz.json'
 import appData from '@/data/apps.json'
 let AppTableHeaders = ['名称', '版本', '更新时间', '平台', '标签', '开发者', '大小', '下载链接', '操作']
@@ -99,7 +100,19 @@ export default {
       listTitle: listTitle
     }
   },
-  components: {}
+  components: {},
+  methods:{
+    appList(){
+      appList({}).then(res => {
+        if(res.code == '00000'){
+          this.apps = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.appList()
+  }
 }
 </script>
 

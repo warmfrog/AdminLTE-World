@@ -85,6 +85,7 @@
 </template>
 
 <script>
+import { bookList }from '@/views/book/apis/index'
 import bookClazz from '@/data/clazz/bookClazz.json'
 import bookData from '@/data/books.json'
 let bookTableHeaders = ['标题', '作者', '分类', '标签', '版本', 'ISBN', '出版社', '出版日期', '页数', '评分', '下载链接', '操作']
@@ -100,6 +101,18 @@ export default {
       bookClazz: bookClazz,
       headers: bookTableHeaders
     }
+  },
+  methods: {
+    bookList(){
+      bookList({}).then(res => {
+        if(res.code == '00000'){
+          this.books = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.bookList()
   }
 }
 </script>

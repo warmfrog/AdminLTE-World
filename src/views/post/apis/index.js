@@ -1,11 +1,12 @@
-import Axios from 'axios'
+import Axios from '@/assets/js/AxiosPlugin'
 
-let host ='http://localhost:9000'
-let postUrl = `${host}/api/post/listByPage`
-export const listPostByPage = data => {
-  return Axios.post(postUrl, data).then(res => res.data)
+
+let listUrl = '/api/post/listByPage'
+let addUrl = '/api/post/add'
+export const listPost = data => {
+  return Axios.post(listUrl, data).then(res => res.data)
 }
 
 export const addPost = data => {
-  return Axios.post(postUrl, data).then(res => res)
+  return Axios.post(addUrl, data).then(res => res)
 }

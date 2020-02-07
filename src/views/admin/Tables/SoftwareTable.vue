@@ -87,6 +87,7 @@
 </template>
 
 <script>
+import { softwareList }from '@/views/software/apis/index'
 import softwareClazz from '@/data/clazz/softwareClazz.json'
 import softwareData from '@/data/softwares.json'
 let softwareTableHeaders = ['软件名', '版本', '更新时间', '平台', '官网', '分类', '标签', '开发者', '免费', '开源', '大小', '下载链接', '操作']
@@ -102,7 +103,18 @@ export default {
       softwareClazz: softwareClazz,
       headers: softwareTableHeaders
     }
-
+  },
+  methods: {
+    softwareList(){
+      softwareList({}).then(res => {
+        if(res.code == '00000'){
+          this.softwares = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.softwareList()
   }
 }
 </script>

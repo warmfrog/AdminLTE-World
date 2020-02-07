@@ -79,6 +79,7 @@
 </template>
 
 <script>
+import { siteList }from '@/views/site/apis/index'
 import siteClazz from '@/data/clazz/siteClazz.json'
 import siteData from '@/data/sites.json'
 let siteTableHeaders = ['名称', 'Url', '分类', '标签', 'needVpn', '操作']
@@ -94,6 +95,18 @@ export default {
       siteClazz: siteClazz,
       headers: siteTableHeaders
     }
+  },
+  methods:{
+    siteList(){
+      siteList({}).then(res => {
+        if(res.code == '00000'){
+          this.sites = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.siteList()
   }
 }
 </script>

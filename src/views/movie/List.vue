@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import { movieList } from './apis/index'
 import MovieItem from './MovieItem'
 import moviesData from '@/data/movies.json'
 import movieClazz from '@/data/clazz/movieClazz.json'
@@ -41,6 +42,18 @@ import movieClazz from '@/data/clazz/movieClazz.json'
         movies: moviesData.data,
         movieClazz: movieClazz
       }
+    },
+    methods:{
+      movieList(){
+        movieList({}).then(res => {
+          if(res.code == '00000'){
+            this.movies = res.data.list
+          }
+        })
+      }
+    },
+    created(){
+      this.movieList()
     }
   }
 </script>

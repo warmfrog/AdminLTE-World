@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { siteList } from './apis/index'
 import siteClazz from '@/data/clazz/siteClazz.json'
 import SiteItem from './SiteItem'
 import siteDatas from '@/data/sites.json'
@@ -42,6 +43,18 @@ export default {
       sites: siteDatas.data.sites,
       siteClazz: siteClazz
     }
+  },
+  methods:{
+    siteList(){
+      siteList({}).then(res => {
+        if(res.code == '00000'){
+          this.sites = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.siteList()
   }
 }
 </script>

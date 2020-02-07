@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { appList } from './apis/index'
 import appDatas from '@/data/apps.json'
 import appClazz from '@/data/clazz/appClazz.json'
 import AppItem from './AppItem'
@@ -42,6 +43,18 @@ export default {
       apps: appDatas.data.apps,
       appClazz: appClazz
     }
+  },
+  methods:{
+    appList(){
+      appList({}).then(res => {
+        if(res.code == '00000'){
+          this.apps = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.appList()
   }
 }
 </script>

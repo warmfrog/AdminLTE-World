@@ -25,7 +25,7 @@
             <i class="fas fa-eye"></i> {{ photo.browsedCount }}
           </a>
           <a href="#" class="btn btn-sm bg-outline-olive">
-            <i class="fas fa-file"></i> {{ (photo.size/1024/1024).toFixed(2) }} MB
+            <i class="fas fa-file"></i> {{ photo.photoCount }}
           </a>
           <a :href="photo.downloadUrl" class="btn btn-sm bg-outline-teal">
             <i class="fas fa-download"></i>

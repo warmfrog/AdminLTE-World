@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import * as api from './apis/index'
 import PostItem from './PostItem'
 import postsData from '@/data/posts.json'
 import postClazz from '@/data/clazz/postClazz.json'
@@ -39,6 +40,27 @@ export default {
     return {
       posts: postsData.data,
       postClazz: postClazz
+    }
+  },
+  created(){
+    this.listPost()
+  },
+  methods: {
+    listPost(){
+      api.listPostByPage({
+      }).then(res => {
+        if(res.code === '00000'){
+          this.posts = res.data.list
+        }
+      })
+    },
+    addPost(){
+      api.addPost({}).then(res => {
+        if(res.code === '00000'){
+          /* 弹框，添加成功 */
+          alert('添加成功')
+        }
+      })
     }
   }
 }

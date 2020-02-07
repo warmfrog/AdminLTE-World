@@ -109,7 +109,7 @@
         "downloadLinks": [
           {
             "platform": "windows",
-            "downloadUrls": [
+            "p": [
               "http://www.microsoft.com",
               "http://www.baidu.com",
               "http://www.csdn.com"

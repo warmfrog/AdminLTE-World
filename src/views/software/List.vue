@@ -42,7 +42,7 @@
 </template>
 
 <script>
-// import SoftwareList from './SoftwareList'
+import { softwareList } from './apis/index'
 import softClazzData from '@/data/clazz/softwareClazz.json'
 import SoftwareItem from './SoftwareItem'
 import SoftwareData from '@/data/softwares.json'
@@ -56,6 +56,18 @@ export default {
       softwareClazz: softClazzData,
       softwares: SoftwareData.data.softwares
     }
+  },
+  methods: {
+    softwareList(){
+      softwareList({}).then(res => {
+        if(res.code == '00000'){
+          this.softwares = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.softwareList()
   }
 }
 </script>

@@ -56,7 +56,7 @@
         "评测"
       ],
       "type": 0,
-      "references": [
+      "cites": [
         {
           "author": "Bob",
           "articleName": "Macbook Pro",
@@ -121,7 +121,7 @@
         "评测"
       ],
       "type": 0,
-      "references": [
+      "cites": [
         {
           "author": "Bob",
           "articleName": "Macbook Pro",
@@ -186,7 +186,7 @@
         "评测"
       ],
       "type": 0,
-      "references": [
+      "cites": [
         {
           "author": "Bob",
           "articleName": "Macbook Pro",
@@ -251,7 +251,7 @@
         "评测"
       ],
       "type": 0,
-      "references": [
+      "cites": [
         {
           "author": "Bob",
           "articleName": "Macbook Pro",
@@ -316,7 +316,7 @@
         "评测"
       ],
       "type": 0,
-      "references": [
+      "cites": [
         {
           "author": "Bob",
           "articleName": "Macbook Pro",
@@ -381,7 +381,7 @@
         "评测"
       ],
       "type": 0,
-      "references": [
+      "cites": [
         {
           "author": "Bob",
           "articleName": "Macbook Pro",

@@ -37,7 +37,7 @@ export default [
       },
       {
         path: 'photo/list',
-        component: () => import('../Tables/PhotoTable.vue')
+        component: () => import('../Tables/AlbumTable.vue')
       },
       {
         path: 'service/list',

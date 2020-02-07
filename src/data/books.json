@@ -64,7 +64,7 @@
         ],
         "downloadLinks": [
           {
-            "downloadUrl": "http://www.baidu.com",
+            "p": "http://www.baidu.com",
             "password": "sdbc"
           }
         ],

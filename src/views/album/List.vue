@@ -1,12 +1,12 @@
 <template>
-    <div class="content-wrapper" style="min-height: 1416.81px;">
+  <div class="content-wrapper" style="min-height: 1416.81px;">
 
     <!-- Main content -->
     <section class="content">
 
       <!-- Default box -->
       <div class="card card-solid card-tabs card-purple">
-         <div class="card-header p-0 pt-1">
+        <div class="card-header p-0 pt-1">
           <NavClazz :navClazz="photoClazz"></NavClazz>
         </div>
         <div class="card-body pb-0">
@@ -28,21 +28,32 @@
 </template>
 
 <script>
+import { albumList } from './apis/index'
 import PhotoItem from './PhotoItem'
-import photosData from '@/data/photos.json'
+import photosData from '@/data/albums.json'
 import photoClazz from '@/data/clazz/photoClazz.json'
-  export default {
-    name: "List",
-    components: {
-      PhotoItem
-    },
-    data() {
-      return {
-        photos: photosData.data.photos,
-        photoClazz: photoClazz
-      }
+export default {
+  name: "List",
+  components: {
+    PhotoItem
+  },
+  data() {
+    return {
+      photos: photosData.data.photos,
+      photoClazz: photoClazz
+    }
+  },
+    created() {
+    this.albumList()
+  },
+  methods: {
+    albumList() {
+      albumList({}).then(res => {
+        this.photos = res.data.list
+      })
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { bookList } from './apis/index'
 import BookItem from './BookItem'
 import BooksData from '@/data/books.json'
 import bookClazz from '@/data/clazz/bookClazz.json'
@@ -42,6 +43,18 @@ export default {
       books: BooksData.data.books,
       bookClazz: bookClazz
     }
+  },
+  methods: {
+    bookList(){
+      bookList({}).then(res => {
+        if(res.code == '00000'){
+          this.books = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.bookList()
   }
 }
 </script>

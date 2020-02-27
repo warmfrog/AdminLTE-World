@@ -1,7 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <TableHeader :clazz="bookClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
+    <AdminContentHeader :adminContentHeaderData="adminContentHeaderData"></AdminContentHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -85,21 +85,39 @@
 </template>
 
 <script>
+import { bookList }from '@/views/book/apis/index'
 import bookClazz from '@/data/clazz/bookClazz.json'
 import bookData from '@/data/books.json'
 let bookTableHeaders = ['标题', '作者', '分类', '标签', '版本', 'ISBN', '出版社', '出版日期', '页数', '评分', '下载链接', '操作']
 let modalTitle = "图书分类列表"
-let listTitle = "开源列表"
+let listTitle = "图书列表"
+let addLink = "book/add"
 export default {
   name: 'bookTable',
   data() {
     return {
-      listTitle: listTitle,
-      modalTitle: modalTitle,
+           adminContentHeaderData: {
+        listTitle: listTitle,
+        modalTitle: modalTitle,
+        addLink: addLink,
+        clazz: bookClazz
+      },
       books: bookData.data.books,
       bookClazz: bookClazz,
       headers: bookTableHeaders
     }
+  },
+  methods: {
+    bookList(){
+      bookList({}).then(res => {
+        if(res.code == '00000'){
+          this.books = res.data.list
+        }
+      })
+    }
+  },
+  created(){
+    this.bookList()
   }
 }
 </script>

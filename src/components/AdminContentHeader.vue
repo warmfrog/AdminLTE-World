@@ -5,7 +5,7 @@
         <div class="col-12 ml-auto">
           <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
             <div class="container">
-              <h6> {{ listTitle }}</h6>
+              <h6> {{ adminContentHeaderData.listTitle }}</h6>
               <!-- SEARCH FORM -->
               <SearchForm></SearchForm>
               <!-- </div> -->
@@ -17,9 +17,9 @@
                 </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn bg-primary">
+                <router-link class="nav-link btn bg-primary" :to="adminContentHeaderData.addLink">
                   添加 <i class="fas fa-plus"></i>
-                </a>
+                </router-link>
               </li>
             </ul>
           </nav>
@@ -34,16 +34,20 @@
 export default {
   name: 'TableHeader',
   props: {
-    'modalTitle': String,
-    'listTitle': String,
-    'clazz': Array
+    'adminContentHeaderData': {
+      'modalTitle': String,
+      'listTitle': String,
+      'clazz': Array,
+      'addLink': String,
+    }
+
   },
   data() {
     return {
       modalInfo: {
         isShow: false,
-        types: this.clazz,
-        title: this.modalTitle
+        types: this.adminContentHeaderData.clazz,
+        title: this.adminContentHeaderData.modalTitle
       }
 
     }

@@ -3,12 +3,22 @@ import App from './App.vue'
 import router from './router'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+import hljs from 'highlight.js'
 
 // AdminLTE CSS
 import 'admin-lte/plugins/fontawesome-free/css/all.min.css'
 import 'admin-lte/dist/css/adminlte.min.css'
+import 'highlight.js/styles/monokai.css'
 
 Vue.config.productionTip = false
+
+// #在main.js定义自定义指令 
+Vue.directive('highlight',function (el) {
+  let blocks = el.querySelectorAll('pre code');
+  blocks.forEach((block)=>{
+    hljs.highlightBlock(block)
+  })
+})
 
 const requireComponent = require.context(
   // 其组件目录的相对路径

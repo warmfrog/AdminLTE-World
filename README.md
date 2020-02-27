@@ -1,5 +1,7 @@
 # admin-lte-world
 
+基于 Vue.js 的 Star 收藏系统开发, 项目需要 nodejs 环境，基于 AdminLTE 后端模版。
+
 ## Project setup
 ```
 npm install

@@ -1,7 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <TableHeader :clazz="postTypes" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
+    <AdminContentHeader :adminContentHeaderData="adminContentHeaderData"></AdminContentHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -83,39 +83,45 @@
 </template>
 
 <script>
-import { listPost, addPost } from '@/views/post/apis/index'
+import {
+  listPost,
+  addPost
+} from '@/views/post/apis/index'
 import postTypes from '@/data/clazz/postClazz.json'
 import postData from '@/data/posts.json'
 let postColumns = ["标题", "作者", "分类", "标签", "发布时间", "字数", "阅读量", "被引用数", "操作"]
 let modalTitle = "博客分类列表"
 let listTitle = "博客列表"
+let addLink = '/admin/post/add'
 export default {
   name: 'PostTable',
   data() {
     return {
-      listTitle: listTitle,
-      modalTitle: modalTitle,
       headers: postColumns,
       postTypes: postTypes,
-      posts: postData.data
+      posts: postData.data,
+      adminContentHeaderData: {
+        listTitle: listTitle,
+        modalTitle: modalTitle,
+        addLink: addLink,
+        clazz: postTypes
+      }
     }
   },
-  created(){
+  created() {
     this.listPost()
   },
   methods: {
-    listPost(){
-      listPost({
-      }).then(res => {
-        if(res.code === '00000'){
+    listPost() {
+      listPost({}).then(res => {
+        if (res.code === '00000') {
           this.posts = res.data.list
         }
       })
-    }
-    ,
-    addPost(){
+    },
+    addPost() {
       addPost({}).then(res => {
-        if(res.code === '00000'){
+        if (res.code === '00000') {
           /* 弹框，添加成功 */
           alert('添加成功')
         }

@@ -8,6 +8,10 @@ export default [
         component: () => import('../Tables/PostTable.vue')
       },
       {
+        path: 'post/add',
+        component: () => import('../EditPanels/EditPostPanel.vue')
+      },
+      {
         path: 'app/list',
         component: () => import('../Tables/AppTable.vue')
       },
@@ -36,7 +40,7 @@ export default [
         component: () => import('../Tables/OpenSourceTable.vue')
       },
       {
-        path: 'photo/list',
+        path: 'album/list',
         component: () => import('../Tables/AlbumTable.vue')
       },
       {
@@ -49,6 +53,14 @@ export default [
       },
       {
         path: 'software/list',
+        component: () => import('../Tables/SoftwareTable.vue')
+      },
+      {
+        path: 'doc/list',
+        component: () => import('../Tables/SoftwareTable.vue')
+      },
+      {
+        path: 'tutorial/list',
         component: () => import('../Tables/SoftwareTable.vue')
       },
       {

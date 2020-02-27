@@ -1,7 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <TableHeader :clazz="appClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
+    <AdminContentHeader :adminContentHeaderData="adminContentHeaderData"></AdminContentHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -89,15 +89,20 @@ import appData from '@/data/apps.json'
 let AppTableHeaders = ['名称', '版本', '更新时间', '平台', '标签', '开发者', '大小', '下载链接', '操作']
 let modalTitle = "App 分类列表"
 let listTitle = "App 列表"
+let addLink="app/add"
 export default {
   name: 'AppTable',
   data() {
     return {
+      adminContentHeaderData: {
+        listTitle: listTitle,
+        modalTitle: modalTitle,
+        addLink: addLink,
+        clazz: appClazz
+      },
       apps: appData.data.apps,
       appClazz: appClazz,
-      headers: AppTableHeaders,
-      modalTitle: modalTitle,
-      listTitle: listTitle
+      headers: AppTableHeaders
     }
   },
   components: {},

@@ -1,7 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <TableHeader :clazz="siteClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
+    <AdminContentHeader :adminContentHeaderData="adminContentHeaderData"></AdminContentHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -79,33 +79,40 @@
 </template>
 
 <script>
-import { siteList }from '@/views/site/apis/index'
+import {
+  siteList
+} from '@/views/site/apis/index'
 import siteClazz from '@/data/clazz/siteClazz.json'
 import siteData from '@/data/sites.json'
 let siteTableHeaders = ['名称', 'Url', '分类', '标签', 'needVpn', '操作']
 let modalTitle = "网址分类列表"
 let listTitle = "网址列表"
+let addLink = "/site/add"
 export default {
   name: 'siteTable',
   data() {
     return {
-      listTitle: listTitle,
-      modalTitle: modalTitle,
       sites: siteData.data.sites,
       siteClazz: siteClazz,
-      headers: siteTableHeaders
+      headers: siteTableHeaders,
+      adminContentHeaderData: {
+        listTitle: listTitle,
+        modalTitle: modalTitle,
+        addLink: addLink,
+        clazz: siteClazz
+      }
     }
   },
-  methods:{
-    siteList(){
+  methods: {
+    siteList() {
       siteList({}).then(res => {
-        if(res.code == '00000'){
+        if (res.code == '00000') {
           this.sites = res.data.list
         }
       })
     }
   },
-  created(){
+  created() {
     this.siteList()
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="content-wrapper" style="min-height: 825px; margin-left: 250px">
     <!-- Content Header (Page header) -->
-    <TableHeader :clazz="softwareClazz" :modalTitle="modalTitle" :listTitle="listTitle"></TableHeader>
+    <AdminContentHeader :adminContentHeaderData="adminContentHeaderData"></AdminContentHeader>
 
     <!-- Main content -->
     <section class="content">
@@ -87,33 +87,40 @@
 </template>
 
 <script>
-import { softwareList }from '@/views/software/apis/index'
+import {
+  softwareList
+} from '@/views/software/apis/index'
 import softwareClazz from '@/data/clazz/softwareClazz.json'
 import softwareData from '@/data/softwares.json'
 let softwareTableHeaders = ['软件名', '版本', '更新时间', '平台', '官网', '分类', '标签', '开发者', '免费', '开源', '大小', '下载链接', '操作']
 let modalTitle = "软件分类列表"
 let listTitle = "软件列表"
+let addLink = "software/add"
 export default {
   name: 'softwareTable',
   data() {
     return {
-      listTitle: listTitle,
-      modalTitle: modalTitle,
+      adminContentHeaderData: {
+        listTitle: listTitle,
+        modalTitle: modalTitle,
+        addLink: addLink,
+        clazz: softwareClazz
+      },
       softwares: softwareData.data.softwares,
       softwareClazz: softwareClazz,
       headers: softwareTableHeaders
     }
   },
   methods: {
-    softwareList(){
+    softwareList() {
       softwareList({}).then(res => {
-        if(res.code == '00000'){
+        if (res.code == '00000') {
           this.softwares = res.data.list
         }
       })
     }
   },
-  created(){
+  created() {
     this.softwareList()
   }
 }

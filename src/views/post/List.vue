@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import * as api from './apis/index'
+import {listPost, addPost} from './apis/index'
 import PostItem from './PostItem'
 import postsData from '@/data/posts.json'
 import postClazz from '@/data/clazz/postClazz.json'
@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     listPost(){
-      api.listPostByPage({
+      listPost({
       }).then(res => {
         if(res.code === '00000'){
           this.posts = res.data.list
@@ -55,7 +55,7 @@ export default {
       })
     },
     addPost(){
-      api.addPost({}).then(res => {
+      addPost({}).then(res => {
         if(res.code === '00000'){
           /* 弹框，添加成功 */
           alert('添加成功')

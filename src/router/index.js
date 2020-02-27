@@ -11,6 +11,8 @@ import musicRouter from '@/views/music/routers/index.js'
 import serviceRouter from '@/views/service/routers/index.js'
 import siteRouter from '@/views/site/routers/index.js'
 import softwareRouter from '@/views/software/routers/index.js'
+import docRouter from '@/views/doc/routers/index.js'
+import tutorialRouter from '@/views/tutorial/routers/index.js'
 import adminRouter from '@/views/admin/routers/index.js'
 
 Vue.use(Router)
@@ -32,6 +34,8 @@ const routes = [
       ...serviceRouter,
       ...siteRouter,
       ...softwareRouter,
+      ...docRouter,
+      ...tutorialRouter,
       {
         path: '/',
         redirect: '/home'

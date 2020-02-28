@@ -18,7 +18,7 @@ WORKDIR ${WORK_DIR:-/usr/src/app}
 # 复制 package.json 到工作目录
 COPY package.json .
 # 运行命令，设置 npm 注册仓库为 taobao 仓库
-RUN npm i --registry=https://registry.npm.taobao.org
+RUN npm i
 # 复制当前目录文件到工作目录
 COPY . .
 # 暴露 Vue.js 应用 8080 端口

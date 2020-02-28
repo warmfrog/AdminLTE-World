@@ -1,4 +1,4 @@
-# admin-lte-world
+# star-client
 
 基于 Vue.js 的 Star 收藏系统开发, 项目需要 nodejs 环境，基于 AdminLTE 后端模版。
 
@@ -25,13 +25,18 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Docker
+
+1. 构建 docker 镜像
+
+`docker build -t warmfrog/admin-lte-world:0.0.1 .`
+
+2. 在 docker 中运行
+
+`docker run -d -p 8080:8080 warmfrog/admin-lte-world:0.0.1`
 
 [0]: docs/index.jpg
 [1]: docs/admin.jpg

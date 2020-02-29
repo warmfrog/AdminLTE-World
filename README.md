@@ -10,7 +10,11 @@
 
 ![后台列表][2]
 
-## Project setup
+## 在 Docker 中运行
+
+`docker run -d -p 8080:8080 warmfrog/star-client:0.0.1`
+
+## 在 Node 中运行
 ```
 npm install
 ```
@@ -32,11 +36,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 1. 构建 docker 镜像
 
-`docker build -t warmfrog/admin-lte-world:0.0.1 .`
+`docker build -t warmfrog/star-client:0.0.1 .`
 
 2. 在 docker 中运行
 
-`docker run -d -p 8080:8080 warmfrog/admin-lte-world:0.0.1`
+`docker run -d -p 8080:8080 warmfrog/star-client:0.0.1`
 
 [0]: docs/index.jpg
 [1]: docs/admin.jpg

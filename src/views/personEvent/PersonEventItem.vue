@@ -25,10 +25,10 @@
             <i class="fas fa-list-ul"></i> {{ personEvent.projects }}
           </li>
           <li href="#" v-if="personEvent.wechat.length" class="list-group-item">
-            wechat: {{ personEvent.wechat.join() }}
+             <i class="fas fa-wechat"></i> wechat: {{ personEvent.wechat.join() }}
           </li>
              <li href="#" v-if="personEvent.qq.length" class="list-group-item">
-            qq: {{ personEvent.qq.join() }}
+             <i class="fas fa-qq"></i> qq: {{ personEvent.qq.join() }}
           </li>
              <li href="#" v-if="personEvent.phone.length" class="list-group-item">
             <i class="fas fa-phone"></i> {{ personEvent.phone.join() }}

@@ -6,7 +6,7 @@ import camelCase from 'lodash/camelCase'
 import hljs from 'highlight.js'
 
 // AdminLTE CSS
-import 'admin-lte/plugins/fontawesome-free/css/all.min.css'
+import 'admin-lte/plugins/fontawesome-free/css/fontawesome.min.css'
 import 'admin-lte/dist/css/adminlte.min.css'
 import 'highlight.js/styles/monokai.css'
 

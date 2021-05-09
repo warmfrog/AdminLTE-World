@@ -1,7 +1,11 @@
-import Axios from '@/assets/js/AxiosPlugin'
+import Axios from '@/assets/js/AxiosPlugin.js'
 
-let listUrl = '/api/app/listByPage'
+let albumListUrl = '/api/album/listByPage'
+let searchPersonEventByPageUrl = "/api/personEventInfo/v1/searchByPage"
+export const albumList = data => {
+  return Axios.post(albumListUrl, data).then(res => res.data)
+}
 
-export const appList = data => {
-  return Axios.post(listUrl, data).then(res => res.data)
+export const searchPersonEventByPage = data => {
+   return Axios.post(searchPersonEventByPageUrl, data).then(res => res.data)
 }

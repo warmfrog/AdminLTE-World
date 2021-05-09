@@ -1,60 +1,76 @@
 <template>
-  <div class="content-wrapper" style="min-height: 1071.31px;">
+  <div class="content-wrapper" style="min-height: 1416.81px;">
 
     <!-- Main content -->
-    <section class="content ">
-      <div class="container-fluid">
-        <div class="card card-warning card-solid">
-          <div class="card-header p-0 pt-1 ">
-            <NavClazz :navClazz="appClazz"></NavClazz>
-          </div>
-          <div class="card-body pb-0">
-            <div class="row">
-              <AppItem v-for="app in apps" :key="app.uuid" :app="app"></AppItem>
-            </div>
-          </div>
-          <div class="card-footer">
-            <Pagination></Pagination>
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card card-solid card-tabs card-purple">
+        <div class="card-header p-0 pt-1">
+          <NavClazz :navClazz="photoClazz"></NavClazz>
+        </div>
+        <div class="card-body pb-0">
+          <div class="row d-flex align-items-stretch">
+            <PhotoItem v-for="personEvent in searchResult.content" :key="personEvent.uuid" :personEvent="personEvent" :imageCover="personEvent.images[0]"></PhotoItem>
           </div>
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+        <!-- /.card-body -->
+        <div class="card-footer">
+          <Pagination></Pagination>
+        </div>
+        <!-- /.card-footer -->
+      </div>
+      <!-- /.card -->
+
     </section>
     <!-- /.content -->
-
-    <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" aria-label="Scroll to top">
-      <i class="fas fa-chevron-up"></i>
-    </a>
   </div>
 </template>
 
 <script>
-import { appList } from './apis/index'
-import appDatas from '@/data/personEvent.json'
-import appClazz from '@/data/clazz/personEventClazz.json'
-import AppItem from './AppItem'
+import { albumList, searchPersonEventByPage } from './apis/index'
+import PhotoItem from './PersonEventItem'
+import photosData from '@/data/albums.json'
+import photoClazz from '@/data/clazz/photoClazz.json'
 export default {
-  name: 'List',
+  name: "List",
   components: {
-    AppItem
+    PhotoItem
   },
   data() {
     return {
-      apps: appDatas.data.apps,
-      appClazz: appClazz
+      photos: photosData.data.photos,
+      photoClazz: photoClazz,
+      searchReqDto: {
+        pageSize: 10,
+        currentPage: 1,
+        position: "深圳",
+        contact: null
+      },
+      searchResult: {
+        content: [],
+        size: 0,
+        number: 10,
+        totalPages: 0,
+        totalElements: 0
+      }
     }
   },
-  methods:{
-    appList(){
-      appList({}).then(res => {
-        if(res.code == '00000'){
-          this.apps = res.data.list
-        }
+    created() {
+    this.albumList(),
+    this.searchPersonEventByPage(this.searchReqDto)
+  },
+  methods: {
+    albumList() {
+      albumList({}).then(res => {
+        this.photos = res.data.list
+      })
+    },
+    searchPersonEventByPage(searchPersonEventDto){
+      searchPersonEventByPage(searchPersonEventDto).then(res => {
+        this.searchResult = res
       })
     }
-  },
-  created(){
-    this.appList()
   }
 }
 </script>

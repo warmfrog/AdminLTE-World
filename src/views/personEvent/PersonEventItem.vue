@@ -14,29 +14,29 @@
 
       <!-- Card Footer -->
       <div class="card-footer">
-        <div class="text-left">
-          <a href="#" class="btn btn-sm bg-outline-teal">
-            <i class="fas fa-heart"></i> {{ personEvent.position }}
-          </a>
-          <a href="#" class="btn btn-sm bg-outline-teal">
-            <i class="fas fa-star"></i> {{ personEvent.price }}
-          </a>
-          <a href="#" class="btn btn-sm  bg-outline-teal">
-            <i class="fas fa-eye"></i> {{ personEvent.projects }}
-          </a>
-          <a href="#" class="btn btn-sm bg-outline-olive">
-            <i class="fas fa-file"></i> {{ personEvent.wechat }}
-          </a>
-             <a href="#" class="btn btn-sm bg-outline-olive">
-            <i class="fas fa-file"></i> {{ personEvent.qq }}
-          </a>
-             <a href="#" class="btn btn-sm bg-outline-olive">
-            <i class="fas fa-file"></i> {{ personEvent.phone }}
-          </a>
-             <a href="#" class="btn btn-sm bg-outline-olive">
+        <ul >
+          <li href="#" class="list-group-item">
+            <i class="fas fa-street-view"></i> {{ personEvent.position }}
+          </li>
+          <li href="#" class="list-group-item">
+            <i class="fas fa-cny"></i> {{ personEvent.price }}
+          </li>
+          <li href="#" class="list-group-item">
+            <i class="fas fa-list-ul"></i> {{ personEvent.projects }}
+          </li>
+          <li href="#" v-if="personEvent.wechat.length" class="list-group-item">
+            wechat: {{ personEvent.wechat.join() }}
+          </li>
+             <li href="#" v-if="personEvent.qq.length" class="list-group-item">
+            qq: {{ personEvent.qq.join() }}
+          </li>
+             <li href="#" v-if="personEvent.phone.length" class="list-group-item">
+            <i class="fas fa-phone"></i> {{ personEvent.phone.join() }}
+          </li>
+             <li href="#" class="list-group-item">
             <i class="fas fa-file"></i> {{ personEvent.eventDetail }}
-          </a>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

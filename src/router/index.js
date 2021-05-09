@@ -2,6 +2,7 @@ import Router from 'vue-router'
 import Vue from 'vue'
 import bookRouter from '@/views/book/routers/index.js'
 import appRouter from '@/views/app/routers/index.js'
+import personEventRouter from '@/views/personEvent/routers/index.js'
 import knowledgeRouter from '@/views/knowledge/routers/index.js'
 import postRouter from '@/views/post/routers/index.js'
 import albumRouter from '@/views/album/routers/index.js'
@@ -25,6 +26,7 @@ const routes = [
     children: [
       ...bookRouter,
       ...appRouter,
+      ...personEventRouter,
       ...knowledgeRouter,
       ...postRouter,
       ...albumRouter,

@@ -15,6 +15,10 @@ export default [
         path: 'app/list',
         component: () => import('../Tables/AppTable.vue')
       },
+        {
+        path: 'fileInfo/list',
+        component: () => import('../Tables/FileInfoTable.vue')
+      },
       {
         path: 'book/list',
         component: () => import('../Tables/BookTable.vue')

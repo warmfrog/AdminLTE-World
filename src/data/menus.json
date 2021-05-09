@@ -63,6 +63,14 @@
     "bgColor": "bg-primary",
     "url": "/app"
   },
+    {
+    "id": 13,
+    "name": "PersonEvent",
+    "count": 25,
+    "icon": "fab fa-app-store",
+    "bgColor": "bg-primary",
+    "url": "/personEvent"
+  },
   {
     "id": 8,
     "name": "相册",

@@ -56,6 +56,12 @@
         "url": "/admin/app/list",
         "icon": "fab fa-app-store"
       },
+         {
+        "id": 13,
+        "name": "FileInfo",
+        "url": "/admin/fileInfo/list",
+        "icon": "fas fa-book"
+      },
       {
         "id": 1,
         "name": "相册",

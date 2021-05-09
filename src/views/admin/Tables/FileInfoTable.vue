@@ -41,14 +41,9 @@
                             
                             <td>{{ fileInfo.filePath }}</td>
                                <td>
-                                 <button v-if="!fileInfo.fileParsed" type="button" class="btn btn-warning">未导入</button>
-                                 <button v-if="fileInfo.fileParsed" type="button" class="btn btn-success">已导入</button>
-                               </td>
-                            <td>
-                            
-                              <button v-if="!fileInfo.fileParsed" type="button" class="btn btn-success">导入</button>
-                              <button type="button" class="btn btn-danger">删除</button>
-                            </td>
+                                  <button v-if="!fileInfo.fileParsed" v-on:click="importPersonEventData(fileInfo.uuid)" type="button" class="btn btn-success">导入</button>
+                                 <span v-if="fileInfo.fileParsed" type="button">已导入</span>
+                               </td>   
                           </tr>
                         </tbody>
                         <tfoot>
@@ -88,9 +83,9 @@
 </template>
 
 <script>
-import {listByPage }from '@/views/flieInfo/apis/index'
+import {listByPage, importPersonEventData }from '@/views/flieInfo/apis/index'
 import appClazz from '@/data/clazz/fileInfoClazz.json'
-let AppTableHeaders = ['uuid', '文件名', '大小', '添加时间', '路径', '是否导入', '操作']
+let AppTableHeaders = ['uuid', '文件名', '大小', '添加时间', '路径', '操作']
 let modalTitle = "App 分类列表"
 let listTitle = "App 列表"
 let addLink="app/add"
@@ -108,8 +103,13 @@ export default {
         currentPage: 1,
         pageSize: 10
       },
+      importReqDto: {
+        fileUuid: "",
+        "password": "stan2019"
+      },
       totalPage: 0,
       total: 0,
+      importResult: {},
        fileInfos: [],
       appClazz: appClazz,
       headers: AppTableHeaders
@@ -127,6 +127,13 @@ export default {
     changePage(currentPage){
         this.pageDto.currentPage = currentPage,
         this.listFileInfoByPage(this.pageDto)
+    },
+    importPersonEventData(fileUuid){
+      this.importReqDto.fileUuid = fileUuid
+        importPersonEventData(this.importReqDto).then(res => {
+           this.importResult = res,
+           this.listFileInfoByPage(this.pageDto)
+        })
     }
   },
   created(){

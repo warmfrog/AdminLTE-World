@@ -30,18 +30,23 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr role="row" v-for="(app, index) in fileInfos" :key="app.uuid" :class="{odd: index%2==0, even: index%2==1}">
-                            <td> {{ app.name }}</td>
-                            <td>{{ app.version }}</td>
-                            <td>{{ new Date(app.updateDate).toLocaleDateString() }}</td>
-                            <td> {{ app.platform }}</td>
-                            <td>{{ app.tags.join() }}</td>
-                            <td>{{ app.developer }}</td>
-                            <td>{{ (app.size/1024/1024).toFixed(2) }} MB</td>
-                            <td>{{ app.downloadLinks }} </td>
+                          <tr role="row" v-for="(fileInfo, index) in fileInfos" :key="fileInfo.uuid" :class="{odd: index%2==0, even: index%2==1}">
+                            <td> {{ fileInfo.uuid }}</td>
+                            <td> {{ fileInfo.fileName }}</td>
+                            <td>{{ fileInfo.fileSize }}</td>
+                            <td>{{ new Date(fileInfo.fileUpdateTime).toLocaleDateString() }}</td>
+
+                          <!--  <td>{{ fileInfo.fileMd5 }}</td>
+                            <td>{{ fileInfo.fileSha256 }} </td> -->
+                            
+                            <td>{{ fileInfo.filePath }}</td>
+                               <td>
+                                 <button v-if="!fileInfo.fileParsed" type="button" class="btn btn-warning">未导入</button>
+                                 <button v-if="fileInfo.fileParsed" type="button" class="btn btn-success">已导入</button>
+                               </td>
                             <td>
-                              <button type="button" class="btn btn-warning">编辑</button>
-                              <button type="button" class="btn btn-success">查看</button>
+                            
+                              <button v-if="!fileInfo.fileParsed" type="button" class="btn btn-success">导入</button>
                               <button type="button" class="btn btn-danger">删除</button>
                             </td>
                           </tr>
@@ -83,9 +88,9 @@
 </template>
 
 <script>
-import { appList }from '@/views/flieInfo/apis/index'
+import { fileInfoList }from '@/views/flieInfo/apis/index'
 import appClazz from '@/data/clazz/fileInfoClazz.json'
-let AppTableHeaders = ['名称', '版本', '更新时间', '平台', '标签', '开发者', '大小', '下载链接', '操作']
+let AppTableHeaders = ['uuid', '文件名', '大小', '添加时间', '路径', '是否导入', '操作']
 let modalTitle = "App 分类列表"
 let listTitle = "App 列表"
 let addLink="app/add"
@@ -99,23 +104,21 @@ export default {
         addLink: addLink,
         clazz: appClazz
       },
-       fileInfos: appList(),
+       fileInfos: fileInfoList(),
       appClazz: appClazz,
       headers: AppTableHeaders
     }
   },
   components: {},
   methods:{
-    appList(){
-      appList({}).then(res => {
-        if(res.code == '000000'){
-          this.apps = res.data.list
-        }
+    fileInfoList(){
+      fileInfoList({}).then(res => {
+        this.fileInfos = res
       })
     }
   },
   created(){
-    this.appList()
+    this.fileInfoList()
   }
 }
 </script>

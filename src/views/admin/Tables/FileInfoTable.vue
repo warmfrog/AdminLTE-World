@@ -30,7 +30,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr role="row" v-for="(app, index) in apps" :key="app.uuid" :class="{odd: index%2==0, even: index%2==1}">
+                          <tr role="row" v-for="(app, index) in fileInfos" :key="app.uuid" :class="{odd: index%2==0, even: index%2==1}">
                             <td> {{ app.name }}</td>
                             <td>{{ app.version }}</td>
                             <td>{{ new Date(app.updateDate).toLocaleDateString() }}</td>
@@ -83,9 +83,8 @@
 </template>
 
 <script>
-import { appList }from '@/views/app/apis/index'
+import { appList }from '@/views/flieInfo/apis/index'
 import appClazz from '@/data/clazz/fileInfoClazz.json'
-import appData from '@/data/fileInfos.json'
 let AppTableHeaders = ['名称', '版本', '更新时间', '平台', '标签', '开发者', '大小', '下载链接', '操作']
 let modalTitle = "App 分类列表"
 let listTitle = "App 列表"
@@ -100,7 +99,7 @@ export default {
         addLink: addLink,
         clazz: appClazz
       },
-      apps: appData.data.apps,
+       fileInfos: appList(),
       appClazz: appClazz,
       headers: AppTableHeaders
     }
@@ -109,7 +108,7 @@ export default {
   methods:{
     appList(){
       appList({}).then(res => {
-        if(res.code == '00000'){
+        if(res.code == '000000'){
           this.apps = res.data.list
         }
       })
